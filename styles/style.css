@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
 /* General styles */
 .container {
   max-width: 1000px;
@@ -16,15 +23,22 @@
 
 #popUp .closePopUp {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 40px;
-  color: #FE052C;
+  top: 15px;
+  right: 50px;
+  font-size: 16px;
+  color: #667;
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border: 1px solid #667;
+}
+
+a.closePopUp:hover {
+  background-color: #E8E9ED;
 }
 
 #popUp.loader {
-  background-image: url(../images/ajax_loader.gif);
+  background-image: url(../images/ajax-loader.gif);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -37,14 +51,15 @@
   margin-top: 80px;
 }
 
-#popUp h1 {
+#popUp h2 {
   margin-bottom: 0;
+  color: #232554;
 }
 
 #popUp .popUpAction {
   padding: 10px;
-  background-color: #FE052C;
-  color: #fff;
+  background-color: #232554;
+  color: #FFF;
   text-decoration: none;
   border-radius: 5px;
   transform: 0.2s all;
@@ -53,13 +68,13 @@
 }
 
 #popUp .popUpAction:hover {
-  color: #FE052C;
-  background: #fff;
+  background-color: #667;
+  color: #E8E9ED;
 }
 
 /* Header styles */
 header {
-  background-color: #FE052C;
+  background-color: #667;
   position: fixed;
   top: 0;
   left: 0;
@@ -73,6 +88,10 @@ header h1 {
   width: 16%;
   float: left;
   padding-left: 0;
+  font-family: 'Chewy', cursive;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 2.3em;
 }
 
 /* Header navigation bar */
@@ -103,7 +122,7 @@ header #search a {
 }
 
 header #search a:hover {
-  background: #CC0020;
+  background: #232554;
 }
 
 header #search img {
@@ -128,7 +147,7 @@ header #search.active input {
 }
 
 header #search.active a {
-  background: #CC0020;
+  background: #232554;
 }
 
 header nav a {
@@ -142,8 +161,8 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: #fff;
-  color: #CC0020;
+  background-color: #E8E9ED;
+  color: #667;
 }
 
 nav ul {
@@ -154,9 +173,13 @@ nav ul {
 	position: relative;
 	}
 
+nav ul.searchActive {
+  margin-right: 230px;
+}
+
 nav ul li {
 	display:inline-block;
-	background-color: #CC0020;
+	background-color: #232554;
   position: relative;
 }
 
@@ -182,7 +205,7 @@ nav ul ul li {
 
 /* Main Section */
 #main {
-  margin-top: 65px;
+  margin-top: 90px;
 }
 
 /* Individual Article Styling */
@@ -219,7 +242,8 @@ nav ul ul li {
 
 .article .articleContent h3 {
   margin-bottom: 0;
-  color: #FE052C;
+  color: #232554;
+  font-weight: 500;
 }
 
 .article .articleContent h6 {
@@ -230,8 +254,12 @@ nav ul ul li {
 .article .impressions {
   width: 15%;
   float: right;
-  font-size: 30px;
-  margin-top: 15px;
+  font-size: 24px;
   text-align: right;
-  color: #097FB2;
+  color: #667;
+  font-family: 'Chewy', cursive;
+}
+
+.article .articleUrl {
+  display: none;
 }
